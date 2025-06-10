@@ -1,0 +1,11 @@
+[Unit]
+Description=Run simple duplicity backup
+
+[Timer]
+OnCalendar=daily
+WakeSystem=true
+Persistent=true
+
+
+[Install]
+WantedBy=timers.target

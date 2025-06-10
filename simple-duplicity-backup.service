@@ -1,0 +1,8 @@
+[Unit]
+Description=Simple Duplicity Backup Incremental
+
+[Service]
+Type=oneshot
+StandardOutput=journal
+StandardError=journal
+ExecStart=INSTALL_DIR/simple-duplicity/backup.sh incremental
